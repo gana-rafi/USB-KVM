@@ -1,0 +1,2 @@
+SUBSYSTEM=="input", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="07a5", ACTION=="add", RUN+="/home/rg/workspace/infrastruct/workstation/kvm/screen_switch_displayport.sh $env{ID_SERIAL} $links $devnode"
+SUBSYSTEM=="input", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="07a5", ACTION=="remove", RUN+="/home/rg/workspace/infrastruct/workstation/kvm/screen_switch_usbc.sh $env{ID_SERIAL} $links $devnode"
